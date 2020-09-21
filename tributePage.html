@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentin Tarantino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="tributePage.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quentin Tarantino</h1>
+
+    </header>
+    <div id="occupation">
+        <ul id="UL" class="occupation_ul">
+            <li>
+                <p>Television Director</p>
+            </li>
+            <li>
+                <p>Cinematographer</p>
+            </li>
+            <li>
+                <p>Film Producer</p>
+            </li>
+            <li>
+                <p>Film Director</p>
+            </li>
+            <li>
+                <p>Screenwriter</p>
+            </li>
+            <li>
+                <p>Film Editor</p>
+            </li>
+            <li>
+                <p>Voice actor</p>
+            </li>
+            <li>
+                <p>Director</p>
+            </li>
+        </ul>
+    </div>
+    <div id="img">
+        <h2> <em><q>When people ask me if I went to film school I tell them, 'no, I went to films.</q></em></h2>
+        <img src="tarantino_black_white.jpg" width="900px" height="600px" alt="tarantino">
+    </div>
+    <div id="movies">
+        <a href="https://www.imovies.cc/ka/persons/20665?page=1&countries_related=no&genres_related=no&type=all&without_watched_movies=no&sort=-year"
+            target="_blank">Tarantino
+            Movies</a>
+        <p class="qoute_container">Quotes</p>
+        <p class="bio">Bio</p>
+    </div>
+
+    <div id="quotes">
+        <ul id="quotes_ul" class="QUOTES">
+            <li><span><q>Violence is one of the most fun things to watch.</q></span></li>
+            <li><span><q>My mom took me to see Carnal Knowledge and The Wild Bunch and all these kind of movies when I
+                        was a kid.</q></span></li>
+            <li><span><q>I'm not a Hollywood basher because enough good movies come out of the Hollywood system every
+                        year to
+                        justify its existence, without any apologies.</q></span></li>
+            <li><span><q>To me, movies and music go hand in hand. When I'm writing a script, one of the first things I
+                        do is
+                        find the music I'm going to play for the opening sequence.</q></span></li>
+
+        </ul>
+    </div>
+    <div id="birth" class="t_bio">
+        <blockquote cite="https://en.wikipedia.org/wiki/Quentin_Tarantino">
+            Tarantino was born on
+            March 27, 1963, in Knoxville, Tennessee, the only child of Connie Pender and Tony Tarantino, an actor and
+            producer. His father is of Italian descent, and his mother has Irish ancestry. He was named for Quint
+            Asper, Burt Reynolds' character in the CBS series Gunsmoke. Tarantino's mother met his father during a
+            trip to Los Angeles, where Tony was a law student and would-be entertainer. She married him soon after, to
+            gain independence from her parents, but their marriage was brief. After the divorce, Connie Tarantino left
+            Los Angeles and moved to Knoxville, where her parents lived. In 1966, Tarantino and his mother moved back to
+            Los Angeles. <br> <br> His films are characterized by nonlinear
+            storylines, aestheticization of violence, extended scenes of dialogue, ensemble casts, references to popular
+            culture and a wide variety of other films, soundtracks primarily containing songs and score pieces from the
+            1960s to the 1980s, alternate history, and features of neo-noir film. <br> He began his career as an
+            independent filmmaker with the release of Reservoir Dogs in 1992, which was funded by money from the sale of
+            his screenplay True Romance (1993). Empire magazine hailed Reservoir Dogs as the "Greatest Independent Film
+            of All Time". His second film, Pulp Fiction (1994), a crime comedy, was a major success both among critics
+            and audiences. He also wrote the screenplay for the horror comedy film From Dusk till Dawn (1996),
+            in which he also starred. Tarantino paid homage to the blaxploitation films of the 1970s with Jackie Brown
+            (1997), an adaptation of Elmore Leonard's novel Rum Punch. <br>
+            In 2003, Tarantino delivered Kill Bill: Volume 1, a highly stylized "revenge flick" in the cinematic
+            traditions of kung fu films and Japanese martial arts; Volume 2 followed in 2004. Tarantino next directed
+            the exploitation slasher film Death Proof (2007), part of a double feature with Robert Rodriguez released in
+            the tradition of 1970s grindhouse cinema under the collective title Grindhouse. His long-postponed
+            Inglourious Basterds (2009) tells an alternate history of Allied forces in Nazi Germany, and was released to
+            critical acclaim. He followed that with another critical success, Django Unchained (2012), a Spaghetti
+            Western set in the Antebellum South. His eighth film, The Hateful Eight (2015), was a long-form Western
+            initially screened in a 70 mm roadshow theatrical release. His ninth film, Once Upon a Time in Hollywood
+            (2019), recounts an alternate history of events surrounding the Tate–LaBianca murders.</blockquote>
+        <p><strong>Born:</strong> <em>March 27, 1963, Knoxville, Tennessee, United States</em></p>
+    </div>
+    <footer>
+        <p id="copyRight">Copyright &copy; Alex 2020</p>
+    </footer>
+    <script>
+        // shows tarantino's occupation
+        const tarantino = document.querySelector('h1');
+        tarantino.addEventListener('click', function () {
+            let hiddenElement = document.getElementById('UL');
+            if (hiddenElement.classList.contains('occupation_ul')) {
+                hiddenElement.classList.remove('occupation_ul');
+            } else {
+                hiddenElement.classList.add('occupation_ul');
+            }
+        });
+
+        // shows tarantinos's quotes
+        const quotes = document.querySelector('.qoute_container');
+        let hiddenQuotes = document.getElementById('quotes_ul');
+        quotes.addEventListener('click', function () {
+            if (hiddenQuotes.classList.contains('QUOTES') && tarantonoBio.classList.contains('t_bio')) {
+                hiddenQuotes.classList.remove('QUOTES');
+            } else {
+                hiddenQuotes.classList.add('QUOTES');
+            }
+        });
+
+        // shows tarantino's bio
+        const bio = document.querySelector('.bio');
+        let tarantonoBio = document.getElementById('birth');
+        bio.addEventListener('click', function () {
+            if (tarantonoBio.classList.contains('t_bio') && hiddenQuotes.classList.contains('QUOTES')) {
+                tarantonoBio.classList.remove('t_bio');
+            } else {
+                tarantonoBio.classList.add('t_bio');
+            }
+
+        });
+
+    </script>
+</body>
+
+</html>

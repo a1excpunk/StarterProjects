@@ -1,0 +1,133 @@
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* header */
+h1{
+    text-align: center;
+    font-family: 'Lobster', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+h2{
+    text-align: center;
+}
+
+/* occupation */
+
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+.occupation_ul{
+    display: none;
+}
+
+#UL li {
+    margin: 15px;
+}
+
+#UL li p {
+    display: inline;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+#UL p:hover{
+    filter: invert(180);
+    cursor: context-menu;
+}
+
+/* img */
+
+#img{
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+/* buttons*/
+
+.qoute_container,.bio,a{
+    display: inline-block;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 20px 0 0 10px;
+}
+
+.qoute_container:hover{
+    filter: invert(180);
+    cursor: pointer;
+}
+
+.bio:hover{
+    filter: invert(180);
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    filter: invert(180);
+}
+
+#movies {
+    text-align: center;
+}
+
+/* bio */
+
+blockquote{
+    width: 900px;
+    margin-left: 20%;
+}
+
+#birth{
+    text-align: center;
+}
+#birth p{
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+/* quotes */
+
+#quotes_ul li{
+    margin: 15px;
+}
+
+span{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+#quotes_ul li:hover{
+    cursor: context-menu;
+}
+
+
+.QUOTES, .t_bio{
+    display: none; 
+}
+
+#quotes{
+    text-align: center;
+}
+
+
+/* footer */
+
+footer{
+    text-align: center;
+    font-size: 12px;
+}

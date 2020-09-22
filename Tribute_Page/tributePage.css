@@ -50,6 +50,11 @@ ul{
     margin: 50px 0 0 0;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 /* buttons*/
 
 .qoute_container,.bio,a{

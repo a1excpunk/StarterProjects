@@ -121,8 +121,11 @@
         quotes.addEventListener('click', function () {
             if (hiddenQuotes.classList.contains('QUOTES') && tarantonoBio.classList.contains('t_bio')) {
                 hiddenQuotes.classList.remove('QUOTES');
+                quotes.textContent = 'Close Quotes';
+
             } else {
                 hiddenQuotes.classList.add('QUOTES');
+                quotes.textContent = 'Quotes';
             }
         });
 
@@ -132,8 +135,10 @@
         bio.addEventListener('click', function () {
             if (tarantonoBio.classList.contains('t_bio') && hiddenQuotes.classList.contains('QUOTES')) {
                 tarantonoBio.classList.remove('t_bio');
+                bio.textContent = 'Close Bio';
             } else {
                 tarantonoBio.classList.add('t_bio');
+                bio.textContent = 'Bio';
             }
 
         });

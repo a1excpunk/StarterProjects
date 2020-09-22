@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>Quentin Tarantino</h1>
+        <h1 title="alt + t" accesskey="t" tabindex="0">Quentin Tarantino</h1>
 
     </header>
     <div id="occupation">
@@ -50,10 +50,10 @@
     </div>
     <div id="movies">
         <a href="https://www.imovies.cc/ka/persons/20665?page=1&countries_related=no&genres_related=no&type=all&without_watched_movies=no&sort=-year"
-            target="_blank">Tarantino
+            target="_blank" accesskey="m" title="alt + m">Tarantino
             Movies</a>
-        <p class="qoute_container">Quotes</p>
-        <p class="bio">Bio</p>
+        <p class="qoute_container" accesskey="q" title="alt + q" tabindex="0">Quotes</p>
+        <p class="bio" accesskey="b" title="alt + b" tabindex="0">Bio</p>
     </div>
 
     <div id="quotes">
@@ -122,7 +122,6 @@
             if (hiddenQuotes.classList.contains('QUOTES') && tarantonoBio.classList.contains('t_bio')) {
                 hiddenQuotes.classList.remove('QUOTES');
                 quotes.textContent = 'Close Quotes';
-
             } else {
                 hiddenQuotes.classList.add('QUOTES');
                 quotes.textContent = 'Quotes';
@@ -142,6 +141,7 @@
             }
 
         });
+
 
     </script>
 </body>

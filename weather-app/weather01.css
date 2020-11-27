@@ -15,7 +15,7 @@
 body {
     color: var(--textColor);
     /* position: relative; */
-    background: url("./images/new\ york.jpg");
+    background: url("./new\ york.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

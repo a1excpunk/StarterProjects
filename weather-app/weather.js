@@ -137,23 +137,3 @@ moscow.addEventListener("click", () => {});
 
 //current date
 // date.innerText = currentDate;
-
-//geolocation
-
-// ('keyup', function(event) {
-//     if (event.code === 'Enter') {
-// //in case of form is needed default prevention, so page won't reload
-//       event.preventDefault();
-//       document.querySelector('form').submit();
-//     }
-//   });
-
-//~converting JSON time to normal time
-// function formattedTime(time) {
-//     const date = new Date(time);
-//     const hours = date.getHours();
-//     const minutes = date.getMinutes();
-//     // const seconds = date.getSeconds();
-//     const formattedTime = hours + ":" + minutes;
-//     return formattedTime;
-// }

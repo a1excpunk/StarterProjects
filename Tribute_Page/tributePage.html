@@ -7,8 +7,8 @@
     <title>Quentin Tarantino</title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="tributePage.css">
+    <script src="./tributePage.js" defer></script>
+    <link rel="stylesheet" href="./tributePage.css">
 </head>
 
 <body>
@@ -103,47 +103,6 @@
     <footer>
         <p id="copyRight">Copyright &copy; Alex 2020</p>
     </footer>
-    <script>
-        // shows tarantino's occupation
-        const tarantino = document.querySelector('h1');
-        tarantino.addEventListener('click', function () {
-            let hiddenElement = document.getElementById('UL');
-            if (hiddenElement.classList.contains('occupation_ul')) {
-                hiddenElement.classList.remove('occupation_ul');
-            } else {
-                hiddenElement.classList.add('occupation_ul');
-            }
-        });
-
-        // shows tarantinos's quotes
-        const quotes = document.querySelector('.qoute_container');
-        let hiddenQuotes = document.getElementById('quotes_ul');
-        quotes.addEventListener('click', function () {
-            if (hiddenQuotes.classList.contains('QUOTES') && tarantonoBio.classList.contains('t_bio')) {
-                hiddenQuotes.classList.remove('QUOTES');
-                quotes.textContent = 'Close Quotes';
-            } else {
-                hiddenQuotes.classList.add('QUOTES');
-                quotes.textContent = 'Quotes';
-            }
-        });
-
-        // shows tarantino's bio
-        const bio = document.querySelector('.bio');
-        let tarantonoBio = document.getElementById('birth');
-        bio.addEventListener('click', function () {
-            if (tarantonoBio.classList.contains('t_bio') && hiddenQuotes.classList.contains('QUOTES')) {
-                tarantonoBio.classList.remove('t_bio');
-                bio.textContent = 'Close Bio';
-            } else {
-                tarantonoBio.classList.add('t_bio');
-                bio.textContent = 'Bio';
-            }
-
-        });
-
-
-    </script>
 </body>
 
 </html>

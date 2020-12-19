@@ -1,2 +1,2 @@
-# vanilla HTML-CSS-JS Projects
+# vanilla HTML-CSS-JS Projects!
 My projects as a beginner.
